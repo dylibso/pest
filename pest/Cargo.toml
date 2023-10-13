@@ -14,7 +14,7 @@ readme = "_README.md"
 rust-version = "1.61"
 
 [features]
-default = ["std", "memchr"]
+default = ["std"]
 # Implements `std::error::Error` for the `Error` type
 std = ["ucd-trie/std", "dep:thiserror"]
 # Enables the `to_json` function for `Pair` and `Pairs`
@@ -27,7 +27,7 @@ ucd-trie = { version = "0.1.5", default-features = false }
 serde = { version = "1.0.145", optional = true }
 serde_json = { version = "1.0.85", optional = true }
 thiserror = { version = "1.0.37", optional = true }
-memchr = { version = "2", optional = true }
+#memchr = { version = "2", optional = true }
 
 [dev-dependencies]
 criterion = { version = "0.5.1", features = ["html_reports"] }
